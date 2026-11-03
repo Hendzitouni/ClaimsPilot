@@ -1,0 +1,20 @@
+# Maps dataset class names -> fields of claimspilot.schemas.Damage (part, damage_type).
+# severity_hint is NOT a schema field: it will feed the week-2 severity rule.
+dent:                       {part: unknown,          damage_type: dent,          severity_hint: null}
+backlight:                  {part: rear_windshield,  damage_type: glass_shatter, severity_hint: null}
+Door-outer-damage:          {part: door,             damage_type: dent,          severity_hint: null}
+Major-door-outer-damage:    {part: door,             damage_type: dent,          severity_hint: severe}
+Minor-door-outer-damage:    {part: door,             damage_type: dent,          severity_hint: minor}
+headlight-damage:           {part: headlight,        damage_type: crack,         severity_hint: null}
+tail-light-damage:          {part: tail_light,       damage_type: crack,         severity_hint: null}
+Major-front-bumper-dent:    {part: front_bumper,     damage_type: dent,          severity_hint: severe}
+Medium-front-bumper-dent:   {part: front_bumper,     damage_type: dent,          severity_hint: moderate}
+Minor-front-bumper-dent:    {part: front_bumper,     damage_type: dent,          severity_hint: minor}
+Major-rear-bumper-dent:     {part: rear_bumper,      damage_type: dent,          severity_hint: severe}
+Medium-rear-bumper-dent:    {part: rear_bumper,      damage_type: dent,          severity_hint: moderate}
+Minor-rear-bumper-dent:     {part: rear_bumper,      damage_type: dent,          severity_hint: minor}
+Major-scratch:              {part: unknown,          damage_type: scratch,       severity_hint: severe}
+Medium-scratch:             {part: unknown,          damage_type: scratch,       severity_hint: moderate}
+Minor-scratch:              {part: unknown,          damage_type: scratch,       severity_hint: minor}
+side-mirror-dent:           {part: side_mirror,      damage_type: dent,          severity_hint: null}
+scratch:                    {part: unknown,          damage_type: scratch,       severity_hint: null}
