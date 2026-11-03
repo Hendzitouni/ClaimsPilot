@@ -1,7 +1,7 @@
 # Maps dataset class names -> fields of claimspilot.schemas.Damage (part, damage_type).
 # severity_hint is NOT a schema field: it will feed the week-2 severity rule.
 dent:                       {part: unknown,          damage_type: dent,          severity_hint: null}
-backlight:                  {part: rear_windshield,  damage_type: glass_shatter, severity_hint: null}
+backlight:                  {part: tail_light,       damage_type: crack,         severity_hint: null}
 Door-outer-damage:          {part: door,             damage_type: dent,          severity_hint: null}
 Major-door-outer-damage:    {part: door,             damage_type: dent,          severity_hint: severe}
 Minor-door-outer-damage:    {part: door,             damage_type: dent,          severity_hint: minor}
