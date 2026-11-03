@@ -23,4 +23,31 @@ jobs:
         run: ruff check .
 
       - name: Test
-        run: python -m pytest
+        run: python -m pytest 
+    
+  
+
+
+
+
+
+
+
+  docker-build:
+    runs-on: ubuntu-latest
+    needs: lint-and-test
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build image
+        run: docker build -t claimspilot-api .
+
+      - name: Smoke test
+        run: |
+          docker run -d --name api -p 8000:8000 claimspilot-api
+          for i in $(seq 1 10); do
+            curl -sf http://localhost:8000/health && exit 0
+            sleep 2
+          done
+          docker logs api
+          exit 1
