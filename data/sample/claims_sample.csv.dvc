@@ -1,0 +1,5 @@
+outs:
+- md5: ed1b76711fcba6e315f0bb1ce17a46a9
+  size: 104
+  hash: md5
+  path: claims_sample.csv
