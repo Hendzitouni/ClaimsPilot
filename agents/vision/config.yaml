@@ -1,0 +1,13 @@
+# Vision agent configuration (no secrets here: the Roboflow key comes from the ROBOFLOW_API_KEY env var)
+dataset:
+  source: roboflow
+  workspace: sindhu
+  project: car_dent_scratch_detection-sekha
+  version: 1
+  format: yolov8
+  local_dir: data/vision/car_dent_scratch        # raw Roboflow export (train only)
+split:
+  output_dir: data/vision/car_dent_scratch_split # leak-free train/valid/test -> DVC-tracked
+  ratios: {train: 0.7, valid: 0.15, test: 0.15}
+  seed: 42
+class_mapping: agents/vision/class_mapping.yaml
