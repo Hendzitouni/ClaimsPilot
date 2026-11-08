@@ -1,8 +1,8 @@
 
 from agents.nlp.agent import (
-    extract_damaged_parts,
-    check_consistency,
     analyze_claim,
+    check_consistency,
+    extract_damaged_parts,
 )
 
 
